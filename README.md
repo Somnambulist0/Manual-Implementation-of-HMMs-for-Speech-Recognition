@@ -82,11 +82,11 @@ The system supports two recognition modes:
 </div> -->
 <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
     <div style="text-align: center">
-        <img src="./images/telephone.jpg" height="400">
+        <img src="./images/telephone.jpg" height="300">
         <p><em>Mode 1: Phone Number Recognition</em></p>
     </div>
     <div style="text-align: center">
-        <img src="./images/unrestricted.jpg" height="400">
+        <img src="./images/unrestricted.jpg" height="300">
         <p><em>Mode 2: Unrestricted Digit Recognition</em></p>
     </div>
 </div>
