@@ -69,7 +69,7 @@ python main.py
 
 ### Recognition
 The system supports two recognition modes:
-
+<!-- no-center -->
 <!-- <div style="display: flex; justify-content: center; align-items: start; gap: 20px;">
     <div>
         <img src="./images/telephone.jpg" style="height: 200px; width: auto;">
@@ -80,7 +80,9 @@ The system supports two recognition modes:
         <p><em>Figure 2: Unrestricted Digit Recognition</em></p>
     </div>
 </div> -->
-<div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+
+<!-- center -->
+<!-- <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
     <div style="text-align: center">
         <img src="./images/telephone.jpg" height="300">
         <p><em>Mode 1: Phone Number Recognition</em></p>
@@ -89,10 +91,21 @@ The system supports two recognition modes:
         <img src="./images/unrestricted.jpg" height="300">
         <p><em>Mode 2: Unrestricted Digit Recognition</em></p>
     </div>
-</div>
+</div> -->
 
-The system can perform the following functions...
-[Your subsequent content here]
+<!-- github -->
+<div align="center">
+<table border="0">
+  <tr>
+    <td width="600" align="center"><img src="./images/telephone.jpg" height="400"></td>
+    <td width="300" align="center"><img src="./images/unrestricted.jpg" height="400"></td>
+  </tr>
+  <tr>
+    <td align="center"><em>Mode 1: Phone Number Recognition</em></td>
+    <td align="center"><em>Mode 2: Unrestricted Digit Recognition</em></td>
+  </tr>
+</table>
+</div>
 
 1. **Phone Number Recognition**
 ```python
