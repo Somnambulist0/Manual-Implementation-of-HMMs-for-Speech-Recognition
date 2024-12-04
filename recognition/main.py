@@ -102,18 +102,20 @@ def wer(reference, hypothesis):
     return wer_value
 tree= load_model('lex_tree.pkl')
 total_wer=0
-nums=0
-for audio_path in os.listdir('.\\'):
-    if audio_path.endswith('.wav'):
-        nums+=1
-        reference = audio_path.split('.')[0]
-        mfccs = get_MFCC(audio_path)
+#nums=0
+#for audio_path in os.listdir('.\\'):
+ #   if audio_path.endswith('.wav'):
+  #      nums+=1
+audio_path= input('audio_path: ')
 
-        best_path_result = best_path_improved(mfccs, tree, pruning_val=1.005)
-        hypothesis = extract_recognition_result(best_path_result.sequence)
-        W = wer(reference,hypothesis)
-        total_wer+=W
-        print (reference)
-        print(hypothesis)
-        print(f"WER: {W}")
+reference = audio_path.split('.')[0]
+mfccs = get_MFCC(audio_path)
+
+best_path_result = best_path_improved(mfccs, tree, pruning_val=1.005)
+hypothesis = extract_recognition_result(best_path_result.sequence)
+W = wer(reference,hypothesis)
+total_wer+=W
+print (reference)
+print(hypothesis)
+print(f"WER: {W}")
 print("Average_WER:", total_wer/nums)
